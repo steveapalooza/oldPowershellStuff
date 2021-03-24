@@ -32,9 +32,10 @@ function Start-Countdown {
     }
 
     Write-Progress -Id 1 -Activity $Message -Status "Completed" -PercentComplete 100 -Completed
+    [System.Windows.Forms.MessageBox]::Show('Coffee is Ready!', 'COFFEE TIME!', 'OK', 'Exclamation')
 }
 
-[System.Windows.Forms.MessageBox]::Show('Coffee is Ready!', 'COFFEE TIME!', 'OK', 'Exclamation')
+
 
 <#
 
