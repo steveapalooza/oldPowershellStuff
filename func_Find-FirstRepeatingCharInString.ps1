@@ -35,16 +35,14 @@ function Find-FirstRepeatingCharInString {
     PROCESS {
         for($i = 0; $i -lt $stringArray.Count; $i++) {
 
-            $char = $stringArray[$i]
-            if($objarrayinfo -contains $char) {
+            if($objarrayinfo -contains $stringArray[$i]) {
 
-                return $char
+                return $stringArray[$i]
 
             }
             else {
 
-                $objcharinfo = @($char)
-                $objarrayinfo += $objcharinfo
+                $objarrayinfo += $stringArray[$i]
 
             }
         }

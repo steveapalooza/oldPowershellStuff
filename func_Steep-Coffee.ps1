@@ -15,7 +15,7 @@
 
 Add-Type -AssemblyName System.Windows.Forms
 
-function Start-Countdown {
+function Steep-Coffee {
    
     Param(
 
@@ -35,14 +35,3 @@ function Start-Countdown {
     [System.Windows.Forms.MessageBox]::Show('Coffee is Ready!', 'COFFEE TIME!', 'OK', 'Exclamation')
 }
 
-
-
-<#
-
-#Start-Countdown -Seconds 10 -Message "This is a test"
-. "G:\Scripts\Powershell\func_Steep-Coffee.ps1"
-
-Show(String, String, MessageBoxButton, MessageBoxImage)
-
-
-#>
